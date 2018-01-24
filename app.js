@@ -11,6 +11,7 @@ app.controller('ListController', ['$scope', '$http', function($scope, $http){
           api_key: 'b83663df0f2553ffc7d00878d481de15',
           format: 'json',
           text: $scope.searchTerm,
+          extras: 'description,date_upload,owner_name,views',
           nojsoncallback: 1
         }
       }).then(function(data){
